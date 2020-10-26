@@ -3,4 +3,4 @@ project(project3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(project3 main.cpp Node.cpp Node.h BinarySearchTree.cpp BinarySearchTree.h)
+add_executable(project3 main.cpp Node.cpp Node.h BSTree.cpp BSTree.h DVD.cpp DVD.h)

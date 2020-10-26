@@ -20,33 +20,33 @@ public:
         return right;
     }
 
-    void setRight(Node<T> *right) {
-        Node::right = right;
+    void setRight(Node<T> *right1) {
+        Node::right = right1;
     }
 
     Node<T> *getLeft() const {
         return left;
     }
 
-    void setLeft(Node<T> *left) {
-        Node::left = left;
+    void setLeft(Node<T> *left1) {
+        Node::left = left1;
     }
 
-    T getKey() const {
-        return key;
+    T getPayload() const {
+        return payload;
     }
 
-    void setKey(T key) {
-        Node::key = key;
+    void setPayload(T key) {
+        Node::payload = key;
     }
 
 private:
     Node<T> *right;
     Node<T> *left;
-    T key;
+    T payload;
 
 public:
-    Node(T key) : key(key) {
+    Node(T key) : payload(key) {
         right = nullptr;
         left = nullptr;
     }
